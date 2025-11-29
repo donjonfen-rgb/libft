@@ -6,7 +6,7 @@
 /*   By: ggaritta <ggaritta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 08:48:09 by ggaritta          #+#    #+#             */
-/*   Updated: 2025/11/28 10:00:45 by ggaritta         ###   ########.fr       */
+/*   Updated: 2025/11/29 23:20:08 by ggaritta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,7 @@ char *ft_substr(char const *s, unsigned int start,size_t len);
 char *ft_strjoin(char const *s1, char const *s2);
 char *ft_strtrim(char const *s1, char const *set);
 char **ft_split(char const *s, char c);
+char *ft_itoa(int n);
+
 
 #endif
