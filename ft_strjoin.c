@@ -6,37 +6,35 @@
 /*   By: ggaritta <ggaritta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/27 12:13:06 by ggaritta          #+#    #+#             */
-/*   Updated: 2025/11/27 13:46:14 by ggaritta         ###   ########.fr       */
+/*   Updated: 2025/12/06 16:34:54 by ggaritta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	unsigned int slen;
-	
+	unsigned int	slen;
+	char			*inizio;
+	char			*strj;
+
+	if (!s1 || !s2)
+		return (NULL);
 	slen = ft_strlen(s1) + ft_strlen(s2);
-	char *strj = (char *) malloc((slen+1)*sizeof(char));
-	if(strj == NULL)
-		return NULL;
-	char *inizio = strj;
-	//if (s1 == 0 || s2 == 0)
-	 //   return (0);
-	//unsigned int s1l;
-	//s1l = ft_strlen(str1);
+	strj = (char *) malloc((slen + 1) * sizeof(char));
+	if (strj == NULL)
+		return (NULL);
+	inizio = strj;
 	while (*s1)
-	{   
+	{
 		*strj++ = *s1++;
-  //      printf("s1[%c]",*strj);
 	}
 	while (*s2)
-	{   
+	{
 		*strj++ = *s2++;
-//        printf("s2[%c]",*strj);
 	}
 	*strj = '\0';
-	return(inizio);
+	return (inizio);
 }
 /*
 int main ()

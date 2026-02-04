@@ -3,15 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ggaritta <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ggaritta <ggaritta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 09:35:26 by ggaritta          #+#    #+#             */
-/*   Updated: 2025/11/25 09:56:10 by ggaritta         ###   ########.fr       */
+/*   Updated: 2025/12/06 16:28:28 by ggaritta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tolower(int ch)
+#include "libft.h"
+
+int	ft_tolower(int ch)
 {
 	if (ch >= 65 && ch <= 90)
-		ch+=32;
+		ch += 32;
+	return (ch);
 }
