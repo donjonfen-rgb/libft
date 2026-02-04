@@ -3,15 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ggaritta <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ggaritta <ggaritta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 09:29:44 by ggaritta          #+#    #+#             */
-/*   Updated: 2025/11/25 09:59:06 by ggaritta         ###   ########.fr       */
+/*   Updated: 2025/12/06 16:23:16 by ggaritta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_toupper(int ch)
+#include "libft.h"
+
+int	ft_toupper(int ch)
 {
-	if (ch >= 97 && ch <=122)
-		ch -=32;
+	if (ch >= 97 && ch <= 122)
+		ch -= 32;
+	return (ch);
 }

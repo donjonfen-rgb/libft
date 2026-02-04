@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                          :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ggaritta <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ggaritta <ggaritta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 09:04:58 by ggaritta          #+#    #+#             */
-/*   Updated: 2025/11/25 09:11:55 by ggaritta         ###   ########.fr       */
+/*   Updated: 2025/12/06 16:29:08 by ggaritta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	size_t	j;
 	size_t	dest_len;
 	size_t	src_len;
-	
+
 	j = 0;
 	dest_len = ft_strlen(dest);
 	src_len = ft_strlen(src);

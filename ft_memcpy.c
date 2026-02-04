@@ -6,18 +6,18 @@
 /*   By: ggaritta <ggaritta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/26 11:40:06 by ggaritta          #+#    #+#             */
-/*   Updated: 2025/11/28 09:45:49 by ggaritta         ###   ########.fr       */
+/*   Updated: 2025/12/03 12:41:07 by ggaritta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memcpy(void *dest_str, const void * src_str, size_t n)
+void	*ft_memcpy(void *dest_str, const void *src_str, size_t n)
 {
-	unsigned char *ptrd;
-	const unsigned char *ptrs;
-	size_t i;
-	
+	size_t				i;
+	unsigned char		*ptrd;
+	const unsigned char	*ptrs;
+
 	ptrd = (unsigned char *) dest_str;
 	ptrs = (const unsigned char *) src_str;
 	i = 0;
